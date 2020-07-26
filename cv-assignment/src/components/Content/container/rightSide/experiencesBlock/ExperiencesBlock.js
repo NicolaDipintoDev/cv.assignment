@@ -1,8 +1,11 @@
 import React from "react";
+import CollapseComponent from "../../../CollapseComponents/CollapseComponent";
+import TimeLineComponent from "../timelinecomponent/TimeLineComponent";
+
 
 const ExperiencesBlock = () => (
   <div>
-    ExperiencesBlock
+    <CollapseComponent title='Education' contentPanel={<TimeLineComponent />} />
   </div>
 );
 
