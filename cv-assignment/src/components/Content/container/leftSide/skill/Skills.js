@@ -11,7 +11,7 @@ const Skills = ({ items, bg, color }) => {
         xs: 3,
         sm: 3,
         md: 3,
-        lg: 4
+        lg: 3
       }}
       size="small"
       dataSource={items}
