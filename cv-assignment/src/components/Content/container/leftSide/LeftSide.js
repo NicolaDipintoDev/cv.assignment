@@ -1,9 +1,10 @@
 import React from "react";
-import Skills from "./skill/Skills";
+import SkillsBlock from "./skill/SkillsBlock";
+import { languages } from './constants/constants';
 
 const LeftSide = () => (
   <div>
-    <Skills />
+    <SkillsBlock title='Languages' skills={languages.data}/>
   </div>
 );
 export default LeftSide;

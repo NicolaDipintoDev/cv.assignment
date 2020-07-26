@@ -1,34 +1,33 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Skill from "./Skill";
 import { List } from "antd";
 
-const Skills = () => {
-  const skills = [
-    { name: "react", bg: "#FAD563", color: "#132B45" },
-    { name: "react", bg: "#FAD563", color: "#132B45" },
-    { name: "react", bg: "#FAD563", color: "#132B45" },
-    { name: "react", bg: "#FAD563", color: "#132B45" },
-    { name: "react", bg: "#FAD563", color: "#132B45" },
-    { name: "react", bg: "#FAD563", color: "#132B45" }
-  ];
+const Skills = ({ items, bg, color }) => {
   return (
     <List
       grid={{
         gutter: 16,
         xs: 5,
-        sm:6,
-        md: 8, 
+        sm: 6,
+        md: 8,
         lg: 10
       }}
       size="small"
-      dataSource={skills}
+      dataSource={items}
       split={false}
       renderItem={item => (
         <List.Item>
-          <Skill name={item.name} bg={item.bg} color={item.color} />
+          <Skill name={item} bg={bg} color={color} />
         </List.Item>
       )}
     />
   );
 };
 export default Skills;
+
+Skills.propTypes = {
+  items: PropTypes.array.isRequired,
+  bg: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired
+};
