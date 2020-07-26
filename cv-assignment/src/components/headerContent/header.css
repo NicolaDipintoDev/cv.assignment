@@ -9,3 +9,7 @@
 .headerText {
     color: white;
 }
+
+.headerIcon{
+    color: yellow !important;
+}

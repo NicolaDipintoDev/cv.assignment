@@ -11,13 +11,15 @@ const PersonalInfo = () => {
   };
   return (
     <List
-      size='small'
+      size="small"
       dataSource={getPersonalData()}
       split={false}
-      renderItem={item => 
-      <List.Item>
-        <item.icon /> <span className='headerText'>{item.label}</span>
-    </List.Item>}
+      renderItem={item => (
+        <List.Item>
+          <item.icon className="headerIcon" />{" "}
+          <span className="headerText">{item.label}</span>
+        </List.Item>
+      )}
     />
   );
 };
