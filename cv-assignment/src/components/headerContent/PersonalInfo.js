@@ -17,7 +17,12 @@ const PersonalInfo = () => {
     ];
   };
 
-  const getContactIcons = () => [];
+  const getContactIcons = () => [
+    {icon: LinkedinOutlined},
+    {icon:GithubOutlined},
+    {icon:MailOutlined},
+    {icon:PhoneOutlined},
+  ];
   return (
     <Row gutter={16}>
       <Col className="gutter-row" span={8}>
@@ -33,15 +38,19 @@ const PersonalInfo = () => {
           )}
         />
       </Col>
-      <Col className="gutter-row" span={16}>
+      <Col className="gutter-row" span={16} style={{position:'relative'}}>
         <List
+        style={{position:'absolute', bottom:'0'}}
+        grid={{
+            gutter: 16,
+            xs: 4,
+          }}
           size="small"
-          dataSource={getPersonalData()}
+          dataSource={getContactIcons()}
           split={false}
           renderItem={item => (
             <List.Item>
-              <item.icon className="headerIcon" />{" "}
-              <span className="headerText">{item.label}</span>
+              <item.icon className="headerIcon" />
             </List.Item>
           )}
         />
