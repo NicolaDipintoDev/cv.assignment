@@ -11,7 +11,7 @@ const LeftSide = () => (
     renderItem={item => (
       <List.Item>
         <SkillsBlock
-          title="Languages"
+          title={item.name}
           skills={item.data}
           bg={item.bg}
           color={item.color}
