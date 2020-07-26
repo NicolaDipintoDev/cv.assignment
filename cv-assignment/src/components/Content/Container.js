@@ -8,7 +8,7 @@ const Container = () => (
       left side
     </Col>
     <Col className="gutter-row" xs={24} sm={12}>
-      <CollapseComponent />
+      <CollapseComponent title='Education'/>
     </Col>
   </Row>
 );
