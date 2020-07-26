@@ -8,6 +8,7 @@ import {
   PhoneOutlined
 } from "@ant-design/icons";
 import { List, Row, Col } from "antd";
+import PersonalData from "./PersonalData";
 
 const PersonalInfo = () => {
   const getPersonalData = () => {
@@ -26,17 +27,7 @@ const PersonalInfo = () => {
   return (
     <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
       <Col className="gutter-row" span={8}>
-        <List
-          size="small"
-          dataSource={getPersonalData()}
-          split={false}
-          renderItem={item => (
-            <List.Item>
-              <item.icon className="headerIcon" />{" "}
-              <span className="headerText">{item.label}</span>
-            </List.Item>
-          )}
-        />
+        <PersonalData />
       </Col>
       <Col className="gutter-row" span={16} style={{position:'relative', textAlign:'right'}}>
         <List
