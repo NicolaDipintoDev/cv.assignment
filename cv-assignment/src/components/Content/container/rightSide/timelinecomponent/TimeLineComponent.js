@@ -1,20 +1,27 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Timeline } from "antd";
 import TimeLineItemContent from "./TimeLineItemConten";
-import './timeLine.css';
+import "./timeLine.css";
 
-const TimeLineComponent = () => (
+const TimeLineComponent = ({ items }) => (
   <Timeline>
     <Timeline.Item color="yellow">
-      <TimeLineItemContent
-        contents={[
-          { class: "timeLine date", text: "01/2020 - now" },
-          { class: "timeLine title", text: "Company name" },
-          { class: "timeLine description", text: "fullStack sdksjskjklsjsljdlsjdsljdlsjdlsjdls" }
-        ]}
-      />
+      {items.map(item => (
+        <TimeLineItemContent
+          contents={[
+            { class: "timeLine date", text: item.date },
+            { class: "timeLine title", text: item.title },
+            { class: "timeLine description", text: item.description }
+          ]}
+        />
+      ))}
     </Timeline.Item>
   </Timeline>
 );
 
 export default TimeLineComponent;
+
+TimeLineItemContent.propTypes = {
+  items: PropTypes.array.isRequired
+};
