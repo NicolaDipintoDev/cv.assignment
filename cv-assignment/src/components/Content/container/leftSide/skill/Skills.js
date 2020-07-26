@@ -8,10 +8,10 @@ const Skills = ({ items, bg, color }) => {
     <List
       grid={{
         gutter: 16,
-        xs: 3,
-        sm: 3,
-        md: 3,
-        lg: 3
+        xs: 2,
+        sm: 2,
+        md: 2,
+        lg: 2
       }}
       size="small"
       dataSource={items}

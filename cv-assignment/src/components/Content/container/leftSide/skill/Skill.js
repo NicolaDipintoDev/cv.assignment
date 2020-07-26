@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Badge } from "antd";
 
 const Skill = ({ name, bg, color }) => (
-  <Badge count={name} style={{ backgroundColor: bg, color: color }} />
+  <Badge count={name} style={{ backgroundColor: bg, color: color, minWidth:'102px' }} />
 );
 export default Skill;
 

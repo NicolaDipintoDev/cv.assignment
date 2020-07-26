@@ -27,11 +27,11 @@ export const swEngineering = {
   color: "white",
   data: [
     "Clean Code",
-    "Refactoring",
     "TDD",
+    "Refactoring",
     "UX",
-    "Design Patterns",
     "MVC",
-    "UML"
+    "UML",
+    "Design Patterns",
   ]
 };
