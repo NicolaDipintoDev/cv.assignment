@@ -1,0 +1,15 @@
+.timeLine {
+    margin-bottom: 0;
+}
+.date{
+    color: grey;
+}
+
+.title{
+    color: black;
+    font-weight: bold;
+}
+
+.description{
+    color: black;
+}
