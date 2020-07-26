@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Collapse } from "antd";
+import './collapseComponent.css';
 
 const { Panel } = Collapse;
 
