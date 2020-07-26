@@ -7,7 +7,7 @@ const { Panel } = Collapse;
 
 const CollapseComponent = ({ title, contentPanel }) => (
   <Collapse defaultActiveKey={["1"]} ghost>
-    <Panel header={<h1>{title}</h1>} key="1">
+    <Panel header={<h1 className='blockTitle'>{title}</h1>} key="1">
       <div className="panelContent">{contentPanel}</div>
     </Panel>
   </Collapse>
