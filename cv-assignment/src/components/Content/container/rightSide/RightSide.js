@@ -3,7 +3,7 @@ import ExperiencesBlock from "./experiencesBlock/ExperiencesBlock";
 
 const RightSide = () => (
   <div>
-    <ExperiencesBlock />
+    <ExperiencesBlock title="Education" />
   </div>
 );
 
