@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col } from "antd";
-import TimeLineComponent from "./rightSide/timelinecomponent/TimeLineComponent";
+import RightSide from "./rightSide/RightSide";
+
 
 const Container = () => (
   <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
@@ -8,7 +9,7 @@ const Container = () => (
       left side
     </Col>
     <Col className="gutter-row" xs={24} sm={12}>
-      <TimeLineComponent />
+      <RightSide />
     </Col>
   </Row>
 );
