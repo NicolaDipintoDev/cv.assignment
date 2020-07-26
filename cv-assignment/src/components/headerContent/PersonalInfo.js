@@ -11,8 +11,13 @@ const PersonalInfo = () => {
   };
   return (
     <List
+      size='small'
       dataSource={getPersonalData()}
-      renderItem={item => <List.Item>{item.label}</List.Item>}
+      split={false}
+      renderItem={item => 
+      <List.Item>
+        <item.icon /> {item.label}
+    </List.Item>}
     />
   );
 };
