@@ -32,7 +32,7 @@ const ContactIcons = () => {
       split={false}
       renderItem={item => (
         <List.Item>
-          <a href={item.url} target='_blank'>
+          <a href={item.url} target='_blank' rel="noopener noreferrer">
             <Popover
               content={<span className="popoverHeader">{item.message}</span>}
             >
