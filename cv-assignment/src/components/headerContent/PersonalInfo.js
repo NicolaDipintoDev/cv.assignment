@@ -9,7 +9,12 @@ const PersonalInfo = () => {
       { label: "Limbiate (MB)", icon: EnvironmentOutlined }
     ];
   };
-  return <div>personal info</div>;
+  return (
+    <List
+      dataSource={getPersonalData()}
+      renderItem={item => <List.Item>{item.label}</List.Item>}
+    />
+  );
 };
 
 export default PersonalInfo;
