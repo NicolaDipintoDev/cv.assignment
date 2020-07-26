@@ -7,7 +7,7 @@ import "./timeLine.css";
 const TimeLineComponent = ({ items }) => (
   <Timeline>
     {items.map(item => (
-      <Timeline.Item color="yellow">
+      <Timeline.Item color="yellow" key={item.date}>
         <TimeLineItemContent
           contents={[
             { class: "timeLine date", text: item.date },
