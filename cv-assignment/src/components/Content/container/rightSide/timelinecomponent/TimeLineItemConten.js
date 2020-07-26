@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 
 const TimeLineItemContent = ({ contents }) => (
   <div>
-    {contents.map(content => (
-      <h3 key={content.class} className={content.class}>{content.text}</h3>
+    {contents.map( (content, i) => (
+      <h3 key={i+content.text.substr(0,5)} className={content.class}>{content.text}</h3>
     ))}
   </div>
 );

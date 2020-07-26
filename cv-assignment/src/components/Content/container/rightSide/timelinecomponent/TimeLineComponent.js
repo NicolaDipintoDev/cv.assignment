@@ -22,6 +22,6 @@ const TimeLineComponent = ({ items }) => (
 
 export default TimeLineComponent;
 
-TimeLineItemContent.propTypes = {
+TimeLineComponent.propTypes = {
   items: PropTypes.array.isRequired
 };
