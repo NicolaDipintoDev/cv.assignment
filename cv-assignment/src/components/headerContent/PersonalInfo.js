@@ -24,7 +24,7 @@ const PersonalInfo = () => {
     {icon:PhoneOutlined},
   ];
   return (
-    <Row gutter={16}>
+    <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
       <Col className="gutter-row" span={8}>
         <List
           size="small"
@@ -38,9 +38,9 @@ const PersonalInfo = () => {
           )}
         />
       </Col>
-      <Col className="gutter-row" span={16} style={{position:'relative'}}>
+      <Col className="gutter-row" span={16} style={{position:'relative', textAlign:'right'}}>
         <List
-        style={{position:'absolute', bottom:'0'}}
+        style={{position:'absolute', bottom:'0', right: '10px'}}
         grid={{
             gutter: 16,
             xs: 4,
