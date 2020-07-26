@@ -1,13 +1,14 @@
 import React from "react";
 import { Timeline } from "antd";
+import TimeLineItemContent from "./TimeLineItemConten";
 
 const TimeLineComponent = () => (
   <Timeline>
     <Timeline.Item color="yellow">
-      Create a services site 2015-09-01
+      <TimeLineItemContent />
     </Timeline.Item>
     <Timeline.Item color="yellow">
-      Create a services site 2015-09-01
+      <TimeLineItemContent />
     </Timeline.Item>
   </Timeline>
 );
