@@ -1,8 +1,13 @@
+:root {
+    --color1: #FAD563;  
+    --color2: #132B45;  
+    --color3: coral;  
+  }
 .headerContent {
     overflow: auto;
 }
 .headerName {
-    color: yellow;
+    color: var(--color1);
     margin-bottom: 0;
 }
 
@@ -11,9 +16,9 @@
 }
 
 .headerIcon{
-    color: yellow !important;
+    color: var(--color1) !important;
 }
 
 .popoverHeader{
-    color: #001529;
+    color: var(--color2);
 }
