@@ -1,7 +1,7 @@
 import React from "react";
 
-const Container = () => (
+const CollapseComponent = () => (
   <div>Collapsed component</div>
 );
 
-export default Container;
+export default CollapseComponent;
