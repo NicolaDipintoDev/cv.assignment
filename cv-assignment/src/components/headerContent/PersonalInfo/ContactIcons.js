@@ -9,10 +9,15 @@ import { List, Popover } from "antd";
 
 const ContactIcons = () => {
   const getContactIcons = () => [
-    { icon: LinkedinOutlined, message: "LinkedIn" },
-    { icon: GithubOutlined, message: "GitHub" },
-    { icon: MailOutlined, message: "Send Email" },
-    { icon: PhoneOutlined, message: "Call me" }
+    {
+      icon: LinkedinOutlined,
+      message: "LinkedIn",
+      url: "https://www.linkedin.com/in/nicola-dipinto-893b18195/"
+    },
+    { icon: GithubOutlined, message: "GitHub", 
+    url: "https://github.com/NicolaDipintoDev" },
+    { icon: MailOutlined, message: "dipinto.nicola.dev@gmail.com", url: 'mailto:dipinto.nicola.dev@gmail.com' },
+    { icon: PhoneOutlined, message: "Call me", url:'tel:+393914618137' }
   ];
 
   return (
@@ -27,11 +32,13 @@ const ContactIcons = () => {
       split={false}
       renderItem={item => (
         <List.Item>
-          <Popover
-            content={<span className="popoverHeader">{item.message}</span>}
-          >
-            <item.icon className="headerIcon" />
-          </Popover>
+          <a href={item.url} target='_blank'>
+            <Popover
+              content={<span className="popoverHeader">{item.message}</span>}
+            >
+              <item.icon className="headerIcon" />
+            </Popover>
+          </a>
         </List.Item>
       )}
     />
