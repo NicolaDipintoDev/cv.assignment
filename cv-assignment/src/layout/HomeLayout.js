@@ -7,7 +7,7 @@ const { Header, Content } = Layout;
 
 const HomeLayout = () => (
   <Layout className='layout'>
-    <Header>
+    <Header style={{height:'auto'}}>
       <HeaderContent />
     </Header>
     <Content>Content</Content>
