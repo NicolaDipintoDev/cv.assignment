@@ -6,8 +6,8 @@ import "./timeLine.css";
 
 const TimeLineComponent = ({ items }) => (
   <Timeline>
-    <Timeline.Item color="yellow">
-      {items.map(item => (
+    {items.map(item => (
+      <Timeline.Item color="yellow">
         <TimeLineItemContent
           contents={[
             { class: "timeLine date", text: item.date },
@@ -15,8 +15,8 @@ const TimeLineComponent = ({ items }) => (
             { class: "timeLine description", text: item.description }
           ]}
         />
-      ))}
-    </Timeline.Item>
+      </Timeline.Item>
+    ))}
   </Timeline>
 );
 
