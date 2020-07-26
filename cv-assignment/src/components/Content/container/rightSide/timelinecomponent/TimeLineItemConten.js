@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const TimeLineItemContent = ({ contents }) => (
   <div>
@@ -9,3 +10,7 @@ const TimeLineItemContent = ({ contents }) => (
 );
 
 export default TimeLineItemContent;
+
+TimeLineItemContent.propTypes = {
+  contents: PropTypes.array.isRequired,
+};
