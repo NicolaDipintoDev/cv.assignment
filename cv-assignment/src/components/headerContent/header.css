@@ -1,3 +1,6 @@
+.headerContent {
+    overflow: auto;
+}
 .headerName {
     color: yellow;
 }
