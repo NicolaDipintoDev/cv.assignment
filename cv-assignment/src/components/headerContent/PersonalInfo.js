@@ -1,6 +1,6 @@
 import React from "react";
 import { CalendarOutlined, EnvironmentOutlined } from "@ant-design/icons";
-import { List } from "antd";
+import { List, Row, Col } from "antd";
 
 const PersonalInfo = () => {
   const getPersonalData = () => {
@@ -10,17 +10,34 @@ const PersonalInfo = () => {
     ];
   };
   return (
-    <List
-      size="small"
-      dataSource={getPersonalData()}
-      split={false}
-      renderItem={item => (
-        <List.Item>
-          <item.icon className="headerIcon" />{" "}
-          <span className="headerText">{item.label}</span>
-        </List.Item>
-      )}
-    />
+    <Row gutter={16}>
+      <Col className="gutter-row" span={6}>
+        <List
+          size="small"
+          dataSource={getPersonalData()}
+          split={false}
+          renderItem={item => (
+            <List.Item>
+              <item.icon className="headerIcon" />{" "}
+              <span className="headerText">{item.label}</span>
+            </List.Item>
+          )}
+        />
+      </Col>
+      <Col className="gutter-row" span={18}>
+        <List
+          size="small"
+          dataSource={getPersonalData()}
+          split={false}
+          renderItem={item => (
+            <List.Item>
+              <item.icon className="headerIcon" />{" "}
+              <span className="headerText">{item.label}</span>
+            </List.Item>
+          )}
+        />
+      </Col>
+    </Row>
   );
 };
 
