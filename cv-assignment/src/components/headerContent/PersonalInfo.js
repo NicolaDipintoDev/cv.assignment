@@ -1,5 +1,12 @@
 import React from "react";
-import { CalendarOutlined, EnvironmentOutlined } from "@ant-design/icons";
+import {
+  CalendarOutlined,
+  EnvironmentOutlined,
+  LinkedinOutlined,
+  GithubOutlined,
+  MailOutlined,
+  PhoneOutlined
+} from "@ant-design/icons";
 import { List, Row, Col } from "antd";
 
 const PersonalInfo = () => {
@@ -9,9 +16,11 @@ const PersonalInfo = () => {
       { label: "Limbiate (MB)", icon: EnvironmentOutlined }
     ];
   };
+
+  const getContactIcons = () => [];
   return (
     <Row gutter={16}>
-      <Col className="gutter-row" span={6}>
+      <Col className="gutter-row" span={8}>
         <List
           size="small"
           dataSource={getPersonalData()}
@@ -24,7 +33,7 @@ const PersonalInfo = () => {
           )}
         />
       </Col>
-      <Col className="gutter-row" span={18}>
+      <Col className="gutter-row" span={16}>
         <List
           size="small"
           dataSource={getPersonalData()}
