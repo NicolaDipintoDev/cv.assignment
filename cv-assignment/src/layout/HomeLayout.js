@@ -11,7 +11,7 @@ const HomeLayout = () => (
     <Header style={{ height: "auto" }}>
       <HeaderContent />
     </Header>
-    <Content>
+    <Content style={{ backgroundColor: "white" }}>
       <Container />
     </Content>
   </Layout>
