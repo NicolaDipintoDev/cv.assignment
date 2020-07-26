@@ -1,5 +1,6 @@
 import React from "react";
 import PersonalInfo from "./PersonalInfo";
+import './header.css';
 
 const HeaderContent = () => (
   <div className="headerContent">
