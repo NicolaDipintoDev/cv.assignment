@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "antd";
-import CollapseComponent from "../CollapseComponents/CollapseComponent";
+import TimeLineComponent from "./rightSide/TimeLineComponent";
 
 const Container = () => (
   <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
@@ -8,10 +8,7 @@ const Container = () => (
       left side
     </Col>
     <Col className="gutter-row" xs={24} sm={12}>
-      <CollapseComponent
-        title="Education"
-        contentPanel={<div>content panel education</div>}
-      />
+      <TimeLineComponent />
     </Col>
   </Row>
 );
