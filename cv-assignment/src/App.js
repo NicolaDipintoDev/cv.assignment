@@ -5,7 +5,7 @@ import HomeLayout from './layout/HomeLayout';
 function App() {
   return (
     <div className="App">
-      a
+      <HomeLayout /> 
     </div>
   );
 }
