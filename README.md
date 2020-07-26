@@ -1,6 +1,6 @@
 # cv.assignment  
 
-#experience: 7 moths  
+# experience: 7 moths  
 
 # Job Frontend Homework  
 
