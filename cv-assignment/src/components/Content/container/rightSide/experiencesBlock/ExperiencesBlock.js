@@ -3,19 +3,13 @@ import PropTypes from "prop-types";
 import CollapseComponent from "../../../CollapseComponents/CollapseComponent";
 import TimeLineComponent from "../timelinecomponent/TimeLineComponent";
 
-const ExperiencesBlock = ({title}) => (
+const ExperiencesBlock = ({title, experiences}) => (
   <div>
     <CollapseComponent
       title={title}
       contentPanel={
         <TimeLineComponent
-          items={[
-            {
-              date: "01/2020 - now",
-              title: "Company name",
-              description: "skdsjkdjskdjskjdksjdskjdskjdskjdskjdks"
-            }
-          ]}
+          items={experiences}
         />
       }
     />
@@ -25,5 +19,6 @@ const ExperiencesBlock = ({title}) => (
 export default ExperiencesBlock;
 
 ExperiencesBlock.propTypes = {
-    title: PropTypes.string.isRequired
+    title: PropTypes.string.isRequired,
+    experiences: PropTypes.array.isRequired,
   };
