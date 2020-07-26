@@ -5,14 +5,14 @@ import {
   MailOutlined,
   PhoneOutlined
 } from "@ant-design/icons";
-import { List } from "antd";
+import { List, Popover } from "antd";
 
 const ContactIcons = () => {
   const getContactIcons = () => [
-    { icon: LinkedinOutlined },
-    { icon: GithubOutlined },
-    { icon: MailOutlined },
-    { icon: PhoneOutlined }
+    { icon: LinkedinOutlined, message: "LinkedIn" },
+    { icon: GithubOutlined, message: "GitHub" },
+    { icon: MailOutlined, message: "Send Email" },
+    { icon: PhoneOutlined, message: "Call me" }
   ];
 
   return (
@@ -27,7 +27,11 @@ const ContactIcons = () => {
       split={false}
       renderItem={item => (
         <List.Item>
-          <item.icon className="headerIcon" />
+          <Popover
+            content={<span className="popoverHeader">{item.message}</span>}
+          >
+            <item.icon className="headerIcon" />
+          </Popover>
         </List.Item>
       )}
     />
