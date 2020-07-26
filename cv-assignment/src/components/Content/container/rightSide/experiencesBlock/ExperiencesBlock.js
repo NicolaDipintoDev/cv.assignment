@@ -1,11 +1,12 @@
 import React from "react";
+import PropTypes from "prop-types";
 import CollapseComponent from "../../../CollapseComponents/CollapseComponent";
 import TimeLineComponent from "../timelinecomponent/TimeLineComponent";
 
-const ExperiencesBlock = () => (
+const ExperiencesBlock = ({title}) => (
   <div>
     <CollapseComponent
-      title="Education"
+      title={title}
       contentPanel={
         <TimeLineComponent
           items={[
@@ -22,3 +23,7 @@ const ExperiencesBlock = () => (
 );
 
 export default ExperiencesBlock;
+
+ExperiencesBlock.propTypes = {
+    title: PropTypes.string.isRequired
+  };
