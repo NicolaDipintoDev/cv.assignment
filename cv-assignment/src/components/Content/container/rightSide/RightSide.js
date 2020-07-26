@@ -1,7 +1,7 @@
 import React from "react";
 import ExperiencesBlock from "./experiencesBlock/ExperiencesBlock";
 import { List } from "antd";
-import { education } from './constants/constants';
+import { education, workExperiences } from './constants/constants';
 
 const RightSide = () => {
  
@@ -9,7 +9,7 @@ const RightSide = () => {
     <div>
       <List
         size="small"
-        dataSource={[education]}
+        dataSource={[education, workExperiences]}
         split={false}
         renderItem={item => (
           <List.Item>
