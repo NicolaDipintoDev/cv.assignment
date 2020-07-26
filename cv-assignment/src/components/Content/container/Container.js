@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "antd";
-import CollapseComponent from "../Content/CollapseComponents/CollapseComponent";
+import CollapseComponent from "../CollapseComponents/CollapseComponent";
 
 const Container = () => (
   <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
