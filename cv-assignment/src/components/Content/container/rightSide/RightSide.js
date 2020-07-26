@@ -1,8 +1,9 @@
 import React from "react";
+import ExperiencesBlock from "./experiencesBlock/ExperiencesBlock";
 
 const RightSide = () => (
   <div>
-    right side
+    <ExperiencesBlock />
   </div>
 );
 
