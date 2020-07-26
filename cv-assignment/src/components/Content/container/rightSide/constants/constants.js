@@ -27,14 +27,6 @@ export const workExperiences = {
     },
     {
       date: "10/2019 - 11/2019",
-      title: "FME Education",
-      description: `Full stack engineer
-          React, Laravel, MySql, MongoDB.
-          Front-end: components development in TTD with react.
-          Back-end: DPI development in TTD with Laravel.`
-    },
-    {
-      date: "01/2020 - now",
       title: "Accenture",
       description: "Java Developer"
     },
