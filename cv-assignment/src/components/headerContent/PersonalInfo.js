@@ -16,7 +16,7 @@ const PersonalInfo = () => {
       split={false}
       renderItem={item => 
       <List.Item>
-        <div><item.icon /> {item.label}</div>
+        <item.icon /> <span className='headerText'>{item.label}</span>
     </List.Item>}
     />
   );
