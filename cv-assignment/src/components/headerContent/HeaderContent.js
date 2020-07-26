@@ -1,5 +1,5 @@
 import React from "react";
-import PersonalInfo from "./PersonalInfo";
+import PersonalInfo from "./PersonalInfo/PersonalInfo";
 import './header.css';
 
 const HeaderContent = () => (
