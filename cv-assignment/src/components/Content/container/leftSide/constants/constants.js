@@ -21,6 +21,6 @@ export const frameworks = {
 
 export const swEngineering = {
   bg: "#80929E",
-  color: "#132B45",
+  color: "white",
   data: ["Clean Code", "Refactoring", "TDD", "UX", "Design Patterns", "MVC", "UML"]
 };
