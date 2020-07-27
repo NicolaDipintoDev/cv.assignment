@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Button, Popover } from "antd";
 import { PlusCircleOutlined } from "@ant-design/icons";
-import "./collapseComponent.css";
 
 const Title = ({ title, logged }) => (
   <h1 className="blockTitle">
