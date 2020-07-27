@@ -6,13 +6,14 @@ import HeaderIcon from "./HeaderIcon";
 const { TextArea } = Input;
 
 const Email = () => {
+  const [showModal, setShowModal] = useState(false);
   const [massege, setMessage] = useState("");
   return (
     <>
       <HeaderIcon
         Icon={MailOutlined}
         message="dipinto.nicola.dev@gmail.com"
-        onClick={() => console.log('mail clicked')}
+        onClick={() => setMessage(!showModal)}
       />
     </>
   );
