@@ -1,7 +1,5 @@
 import React from "react";
-import ExperiencesBlock from "./experiencesBlock/ExperiencesBlock";
 import { List } from "antd";
-import { education, workExperiences } from "./constants/constants";
 
 const BlocksList = (Component, listData) => {
   return (
