@@ -6,7 +6,7 @@ import {
   PhoneOutlined
 } from "@ant-design/icons";
 import { List } from "antd";
-import HeaderIcon from "../headerIcon/HeaderIcon";
+import LinkedIcon from "../headerIcon/LinkedIcon";
 
 const ContactIcons = () => {
   const getContactIcons = () => [
@@ -20,7 +20,7 @@ const ContactIcons = () => {
     { icon: MailOutlined, message: "dipinto.nicola.dev@gmail.com", url: 'mailto:dipinto.nicola.dev@gmail.com' },
     { icon: PhoneOutlined, message: "Call me", url:'tel:+393914618137' }
   ];
-
+// Icon={item.icon} message={item.message}
   return (
     <List
       style={{ position: "absolute", bottom: "0", right: "10px" }}
@@ -33,9 +33,7 @@ const ContactIcons = () => {
       split={false}
       renderItem={item => (
         <List.Item>
-          <a href={item.url} target='_blank' rel="noopener noreferrer">
-            <HeaderIcon Icon={item.icon} message={item.message} />
-          </a>
+          <LinkedIcon Icon={item.icon} message={item.message} url={item.url} />
         </List.Item>
       )}
     />

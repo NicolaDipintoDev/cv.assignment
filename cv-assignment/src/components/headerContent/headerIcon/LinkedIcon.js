@@ -2,10 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import HeaderIcon from "./HeaderIcon";
 
-const LinkedIcon = ({ url, icon, message }) => {
+const LinkedIcon = ({ url, Icon, message }) => {
   return (
     <a href={url} target="_blank" rel="noopener noreferrer">
-      <HeaderIcon Icon={icon} message={message} />
+      <HeaderIcon Icon={Icon} message={message} />
     </a>
   );
 };
