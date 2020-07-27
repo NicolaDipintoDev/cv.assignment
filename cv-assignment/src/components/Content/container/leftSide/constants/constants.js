@@ -1,5 +1,5 @@
 export const languages = {
-  name: "Languages",
+  title: "Languages",
   bg: "#FAD563",
   color: "#132B45",
   data: [
@@ -15,14 +15,14 @@ export const languages = {
 };
 
 export const frameworks = {
-  name: "Frameworks",
+  title: "Frameworks",
   bg: "#132B45",
   color: "#FAD563",
   data: ["React", "Laravel", "Angular", "Bootstrap"]
 };
 
 export const swEngineering = {
-  name: "Software Engineering",
+  title: "Software Engineering",
   bg: "#80929E",
   color: "white",
   data: [
