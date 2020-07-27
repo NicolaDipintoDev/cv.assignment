@@ -11,7 +11,7 @@ const HomeLayout = () => {
   return (
     <Layout className="layout">
       <Header style={{ height: "auto" }}>
-        <HeaderContent />
+        <HeaderContent setLogged={setLogged} logged={logged}/>
       </Header>
       <Content style={{ backgroundColor: "white" }}>
         <Container />
