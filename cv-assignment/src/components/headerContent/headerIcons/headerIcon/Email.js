@@ -7,13 +7,14 @@ const { TextArea } = Input;
 
 const Email = () => {
   const [showModal, setShowModal] = useState(false);
-  const [subject, setSubject] = useState("");
+  const [subject, setSubject] = useState("I'm interested to your Profile");
   const [massege, setMessage] = useState("");
 
   const openModal = () => setShowModal(true);
   const closeModal = () => setShowModal(false);
   const onChangeMessage = ({ target: { value } }) => setMessage(value);
   const onChangeSubject = ({ target: { value } }) => setSubject(value);
+
   return (
     <>
       <HeaderIcon
@@ -24,7 +25,6 @@ const Email = () => {
       {showModal ? (
         <Modal
           visible={true}
-          //onOk={this.handleOk}
           onCancel={closeModal}
           footer={[
             <a
@@ -42,7 +42,7 @@ const Email = () => {
           ]}
         >
           <h3>Subject</h3>
-          <Input placeholder="Subject" onChange={onChangeSubject} />
+          <Input placeholder="Subject" onChange={onChangeSubject} value={subject} />
           <h3>Message</h3>
           <TextArea
             value={massege}
