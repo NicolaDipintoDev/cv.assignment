@@ -1,10 +1,11 @@
 import React from "react";
+import PropTypes from "prop-types";
 import SkillsBlock from "./skill/SkillsBlock";
 import { languages, frameworks, swEngineering } from "./constants/constants";
 import Message from "./message/Message";
 import BlocksList from "../BlocksList/BlocksList";
 
-const LeftSide = () => (
+const LeftSide = ({ logged }) => (
   <>
     <Message />
     <BlocksList
@@ -14,3 +15,7 @@ const LeftSide = () => (
   </>
 );
 export default LeftSide;
+
+LeftSide.propTypes = {
+  logged: PropTypes.bool.isRequired
+};
