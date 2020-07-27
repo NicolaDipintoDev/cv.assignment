@@ -1,19 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Button, Popover } from "antd";
 import { PlusCircleOutlined } from "@ant-design/icons";
+import EditButton from "../../container/editButton.js/EditButton";
 
 const Title = ({ title, logged }) => (
   <h1 className="blockTitle">
     {title}{" "}
     {logged && (
-      <Popover content={<span className="popoverCollapse">Aggiungi</span>}>
-        <Button
-          ghost
-          shape="circle"
-          icon={<PlusCircleOutlined className="collapseIcon" />}
-        />
-      </Popover>
+      <EditButton Icon={PlusCircleOutlined} text='Aggiungi' />
     )}
   </h1>
 );
