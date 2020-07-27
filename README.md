@@ -2,6 +2,14 @@
 
 # experience: 7 moths  
 
+# run  
+
+1) install yarn: https://classic.yarnpkg.com/en/docs/install/#mac-stable  
+2) clone the repo  
+3) open in terminal and ```cd cv-assignment```  
+4) yarn install  
+5) yarn start  
+
 # Job Frontend Homework  
 
 As part of our application process, we'd like to see what you can produce by giving you a small assignment. It should take you no more than a few hours to complete the assignment, but any extra polish or features you might want to put in will not go unnoticed.
