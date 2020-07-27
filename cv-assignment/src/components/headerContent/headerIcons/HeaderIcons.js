@@ -46,7 +46,7 @@ const HeaderIcons = () => {
       dataSource={icons}
       grid={{
         gutter: 16,
-        xs: 6
+        xs: 3
       }}
       split={false}
       renderItem={(item, i) => <List.Item>{renderIcon(i, item)}</List.Item>}
