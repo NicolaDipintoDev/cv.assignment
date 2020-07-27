@@ -14,7 +14,7 @@ const HomeLayout = () => {
         <HeaderContent setLogged={setLogged} logged={logged}/>
       </Header>
       <Content style={{ backgroundColor: "white" }}>
-        <Container />
+        <Container logged={logged} />
       </Content>
     </Layout>
   );
