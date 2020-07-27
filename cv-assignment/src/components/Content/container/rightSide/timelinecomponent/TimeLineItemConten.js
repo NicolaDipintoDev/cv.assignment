@@ -16,5 +16,5 @@ export default TimeLineItemContent;
 
 TimeLineItemContent.propTypes = {
   contents: PropTypes.array.isRequired,
-  logged: PropTypes.bool.isRequired
+  logged: PropTypes.number.isRequired
 };

@@ -21,5 +21,5 @@ SkillsBlock.propTypes = {
   data: PropTypes.array.isRequired,
   bg: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
-  logged: PropTypes.bool.isRequired
+  logged: PropTypes.number.isRequired
 };

@@ -16,5 +16,5 @@ const RightSide = ({ logged }) => {
 export default RightSide;
 
 RightSide.propTypes = {
-  logged: PropTypes.bool.isRequired
+  logged: PropTypes.number.isRequired
 };

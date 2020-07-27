@@ -20,5 +20,5 @@ const Container = ({ logged }) => (
 export default Container;
 
 Container.propTypes = {
-  logged: PropTypes.bool.isRequired
+  logged: PropTypes.number.isRequired
 };

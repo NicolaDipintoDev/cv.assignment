@@ -29,7 +29,7 @@ Block.propTypes = {
   bg: PropTypes.string,
   color: PropTypes.string,
   Component: PropTypes.func.isRequired,
-  logged: PropTypes.bool.isRequired
+  logged: PropTypes.number.isRequired
 };
 
 Block.defaultProps = {

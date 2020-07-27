@@ -29,5 +29,5 @@ export default BlocksList;
 BlocksList.propTypes = {
   Component: PropTypes.func.isRequired,
   listData: PropTypes.array.isRequired,
-  logged: PropTypes.bool.isRequired
+  logged: PropTypes.number.isRequired
 };

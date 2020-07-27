@@ -16,5 +16,5 @@ export default Title;
 
 Title.propTypes = {
   title: PropTypes.string.isRequired,
-  logged: PropTypes.bool.isRequired
+  logged: PropTypes.number.isRequired
 };

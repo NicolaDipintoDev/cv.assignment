@@ -25,5 +25,5 @@ export default TimeLineComponent;
 
 TimeLineComponent.propTypes = {
   items: PropTypes.array.isRequired,
-  logged: PropTypes.bool.isRequired
+  logged: PropTypes.number.isRequired
 };

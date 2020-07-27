@@ -20,5 +20,5 @@ export default CollapseComponent;
 CollapseComponent.propTypes = {
   title: PropTypes.string.isRequired,
   contentPanel: PropTypes.element.isRequired,
-  logged: PropTypes.bool.isRequired
+  logged: PropTypes.number.isRequired
 };
