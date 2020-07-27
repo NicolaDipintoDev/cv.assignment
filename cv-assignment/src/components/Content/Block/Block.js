@@ -13,6 +13,7 @@ const Block = ({
   <div>
     <CollapseComponent
       title={title}
+      logged={logged}
       contentPanel={
         <Component items={items} bg={bg} color={color} logged={logged} />
       }
