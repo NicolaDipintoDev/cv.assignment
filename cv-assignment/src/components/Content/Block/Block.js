@@ -18,7 +18,7 @@ Block.propTypes = {
   items: PropTypes.array.isRequired,
   bg: PropTypes.string,
   color: PropTypes.string,
-  Component: PropTypes.element.isRequired
+  Component: PropTypes.func.isRequired
 };
 
 Block.defaultProps = {
