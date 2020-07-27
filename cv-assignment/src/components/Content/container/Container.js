@@ -11,7 +11,7 @@ const Container = ({ logged }) => (
       <LeftSide />
     </Col>
     <Col className="gutter-row" xs={24} sm={12} md={11} lg={8}>
-      <RightSide />
+      <RightSide logged={logged}/>
     </Col>
     <Col className="gutter-row" xs={0} sm={0} md={1} lg={4}></Col>
   </Row>
