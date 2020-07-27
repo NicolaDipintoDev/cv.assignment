@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Popover } from "antd";
 
-const HeaderIcon = ({ Icon }) => {
+const HeaderIcon = ({ Icon, message }) => {
   return (
-    <Popover content={<span className="popoverHeader">{item.message}</span>}>
+    <Popover content={<span className="popoverHeader">{message}</span>}>
       <Icon className="headerIcon" />
     </Popover>
   );
@@ -13,5 +13,6 @@ const HeaderIcon = ({ Icon }) => {
 export default HeaderIcon;
 
 HeaderIcon.propTypes = {
-  Icon: PropTypes.func.isRequired
+  Icon: PropTypes.func.isRequired,
+  message: PropTypes.string.isRequired,
 };
