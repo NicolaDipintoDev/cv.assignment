@@ -6,9 +6,7 @@ import EditButton from "../../container/editButton.js/EditButton";
 const Title = ({ title, logged }) => (
   <h1 className="blockTitle">
     {title}{" "}
-    {logged && (
-      <EditButton Icon={PlusCircleOutlined} text='Aggiungi' />
-    )}
+    {logged ? <EditButton Icon={PlusCircleOutlined} text="Aggiungi" /> : false}
   </h1>
 );
 

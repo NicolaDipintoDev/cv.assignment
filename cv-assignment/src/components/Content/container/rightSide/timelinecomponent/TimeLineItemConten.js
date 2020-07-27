@@ -5,7 +5,7 @@ import { MinusCircleOutlined } from "@ant-design/icons";
 
 const TimeLineItemContent = ({ contents, logged }) => (
   <div>
-    {logged && <EditButton Icon={MinusCircleOutlined} text="Rimuovi" />}
+    {logged? <EditButton Icon={MinusCircleOutlined} text="Rimuovi" /> : false}
     {contents.map( (content, i) => (
       <h3 key={i+content.text.substr(0,5)} className={content.class}>{content.text}</h3>
     ))}

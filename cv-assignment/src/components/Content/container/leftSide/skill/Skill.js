@@ -6,7 +6,7 @@ import EditButton from "../../editButton.js/EditButton";
 
 const Skill = ({ name, bg, color, logged }) => (
   <>
-    {logged && <EditButton Icon={MinusCircleOutlined} text="Rimuovi" />}
+    {logged? <EditButton Icon={MinusCircleOutlined} text="Rimuovi" /> : false}
     <Badge
       count={name}
       style={{ backgroundColor: bg, color: color, minWidth: "102px" }}
