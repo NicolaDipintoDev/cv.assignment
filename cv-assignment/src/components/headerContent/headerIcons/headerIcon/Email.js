@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Input, Modal } from "antd";
+import { Input, Modal, Button } from "antd";
 import { MailOutlined } from "@ant-design/icons";
 import HeaderIcon from "./HeaderIcon";
 
@@ -13,8 +13,26 @@ const Email = () => {
       <HeaderIcon
         Icon={MailOutlined}
         message="dipinto.nicola.dev@gmail.com"
-        onClick={() => setMessage(!showModal)}
+        onClick={() => setShowModal(!showModal)}
       />
+      {showModal ? (
+        <Modal
+          visible={true}
+          //onOk={this.handleOk}
+          //onCancel={this.handleCancel}
+          footer={[
+            <Button
+              key="submit"
+              type="primary"
+             // onClick={this.handleOk}
+            >
+             Invia
+            </Button>
+          ]}
+        ></Modal>
+      ) : (
+        false
+      )}
     </>
   );
 };
