@@ -3,18 +3,18 @@ import ExperiencesBlock from "./experiencesBlock/ExperiencesBlock";
 import { List } from "antd";
 import { education, workExperiences } from "./constants/constants";
 
-const BlocksList = (Component, title, items) => {
+const BlocksList = (Component, listData) => {
   return (
     <div>
       <List
         size="small"
-        dataSource={[education, workExperiences]}
+        dataSource={listData}
         split={false}
         renderItem={item => (
           <List.Item>
             <Component 
             title={item.title} 
-            items={item.data} 
+            data={item.data} 
             bg={bg} 
             color={color} />
           </List.Item>
@@ -30,7 +30,8 @@ BlocksList.propTypes = {
   items: PropTypes.array.isRequired,
   bg: PropTypes.string,
   color: PropTypes.string,
-  Component: PropTypes.element.isRequired
+  Component: PropTypes.element.isRequired,
+  listData:PropTypes.array.isRequired,
 };
 
 BlocksList.defaultProps = {
