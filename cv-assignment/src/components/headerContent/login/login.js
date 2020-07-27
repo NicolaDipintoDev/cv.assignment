@@ -6,4 +6,4 @@ const Login = () => {
   );
 };
 
-export default HeaderIcon;
+export default Login;
