@@ -1,6 +1,6 @@
 export const education = {
   title: "Education",
-  experiences: [
+  data: [
     {
       date: "09/2019 - 10/2019",
       title: "OverNet Education",
@@ -16,7 +16,7 @@ export const education = {
 
 export const workExperiences = {
   title: "Work Experiences",
-  experiences: [
+  data: [
     {
       date: "01/2020 - now",
       title: "FME Education",

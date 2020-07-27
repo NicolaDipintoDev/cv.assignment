@@ -1,26 +1,14 @@
 import React from "react";
 import ExperiencesBlock from "./experiencesBlock/ExperiencesBlock";
-import { List } from "antd";
-import { education, workExperiences } from './constants/constants';
+import { education, workExperiences } from "./constants/constants";
+import BlocksList from "../BlocksList/BlocksList";
 
 const RightSide = () => {
- 
   return (
-    <div>
-      <List
-        size="small"
-        dataSource={[education, workExperiences]}
-        split={false}
-        renderItem={item => (
-          <List.Item>
-            <ExperiencesBlock
-              title={item.title}
-              data={item.experiences}
-            />
-          </List.Item>
-        )}
-      />
-    </div>
+    <BlocksList
+      Component={ExperiencesBlock}
+      listData={[education, workExperiences]}
+    />
   );
 };
 export default RightSide;
