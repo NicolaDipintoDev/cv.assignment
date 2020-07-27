@@ -1,5 +1,12 @@
 import React from "react";
-import { CalendarOutlined, EnvironmentOutlined } from "@ant-design/icons";
+import {
+  CalendarOutlined,
+  EnvironmentOutlined,
+  LinkedinOutlined,
+  GithubOutlined,
+  MailOutlined,
+  PhoneOutlined
+} from "@ant-design/icons";
 import { List } from "antd";
 import HeaderIcon from "../headerIcons/headerIcon/HeaderIcon";
 import LinkedIcon from "../headerIcons/headerIcon/LinkedIcon";
@@ -39,14 +46,10 @@ const HeaderIcons = () => {
       dataSource={icons}
       grid={{
         gutter: 16,
-        xs: 2
+        xs: 6
       }}
       split={false}
-      renderItem={(item, i) => (
-        <List.Item>
-          {renderIcon(i, item)}
-        </List.Item>
-      )}
+      renderItem={(item, i) => <List.Item>{renderIcon(i, item)}</List.Item>}
     />
   );
 };
