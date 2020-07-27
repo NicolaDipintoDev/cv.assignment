@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Input, Modal, Button } from "antd";
 import { MailOutlined } from "@ant-design/icons";
-import HeaderIcon from "./HeaderIcon";
+import HeaderIcon from "../HeaderIcon";
 
 const { TextArea } = Input;
 

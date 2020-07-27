@@ -3,7 +3,7 @@ import { List } from "antd";
 import HeaderIcon from "../headerIcons/headerIcon/HeaderIcon";
 import LinkedIcon from "../headerIcons/headerIcon/LinkedIcon";
 import { icons } from "./constants/constants";
-import Email from "./headerIcon/Email";
+import Email from "./headerIcon/email/Email";
 
 const HeaderIcons = () => {
   const renderIcon = (index, item) => {
