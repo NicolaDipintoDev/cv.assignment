@@ -1,7 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { List } from "antd";
 
-const BlocksList = (Component, listData) => {
+const BlocksList = ({ Component, listData }) => {
   return (
     <div>
       <List
@@ -10,11 +11,12 @@ const BlocksList = (Component, listData) => {
         split={false}
         renderItem={item => (
           <List.Item>
-            <Component 
-            title={item.title} 
-            data={item.data} 
-            bg={bg} 
-            color={color} />
+            <Component
+              title={item.title}
+              data={item.data}
+              bg={item.bg}
+              color={item.color}
+            />
           </List.Item>
         )}
       />
@@ -24,15 +26,6 @@ const BlocksList = (Component, listData) => {
 export default BlocksList;
 
 BlocksList.propTypes = {
-  title: PropTypes.string.isRequired,
-  items: PropTypes.array.isRequired,
-  bg: PropTypes.string,
-  color: PropTypes.string,
-  Component: PropTypes.element.isRequired,
-  listData:PropTypes.array.isRequired,
-};
-
-BlocksList.defaultProps = {
-  bg: null,
-  color: null
+  Component: PropTypes.func.isRequired,
+  listData: PropTypes.array.isRequired
 };
