@@ -25,12 +25,12 @@ const HeaderIcons = () => {
       message: "GitHub",
       url: "https://github.com/NicolaDipintoDev"
     },
+    { icon: PhoneOutlined, message: "Call me", url: "tel:+393914618137" },
     {
       icon: MailOutlined,
       message: "dipinto.nicola.dev@gmail.com",
       url: "mailto:dipinto.nicola.dev@gmail.com"
-    },
-    { icon: PhoneOutlined, message: "Call me", url: "tel:+393914618137" }
+    }
   ];
 
   const renderIcon = (index, item) =>
