@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Skill from "./Skill";
 import { List } from "antd";
 
-const Skills = ({ items, bg, color }) => {
+const Skills = ({ items, bg, color, logged }) => {
   return (
     <List
       grid={{
@@ -18,7 +18,7 @@ const Skills = ({ items, bg, color }) => {
       split={false}
       renderItem={item => (
         <List.Item>
-          <Skill name={item} bg={bg} color={color} />
+          <Skill name={item} bg={bg} color={color} logged={logged} />
         </List.Item>
       )}
     />
@@ -29,5 +29,6 @@ export default Skills;
 Skills.propTypes = {
   items: PropTypes.array.isRequired,
   bg: PropTypes.string.isRequired,
-  color: PropTypes.string.isRequired
+  color: PropTypes.string.isRequired,
+  logged: PropTypes.bool.isRequired
 };
