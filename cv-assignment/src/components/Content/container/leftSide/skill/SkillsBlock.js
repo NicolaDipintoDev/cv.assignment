@@ -2,14 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import CollapseComponent from "../../../CollapseComponents/CollapseComponent";
 import Skills from "./Skills";
+import Block from "../../../Block/Block";
 
 const SkillsBlock = ({ title, skills, bg, color }) => (
-  <div>
-    <CollapseComponent
-      title={title}
-      contentPanel={<Skills items={skills} bg={bg} color={color} />}
-    />
-  </div>
+  <Block Component={Skills} title={title}  items={skills} bg={bg} color={color} />
 );
 
 export default SkillsBlock;
