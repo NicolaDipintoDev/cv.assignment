@@ -1,7 +1,6 @@
 import React from "react";
 import SkillsBlock from "./skill/SkillsBlock";
 import { languages, frameworks, swEngineering } from "./constants/constants";
-import { List } from "antd";
 import Message from "./message/Message";
 import BlocksList from "../BlocksList/BlocksList";
 
