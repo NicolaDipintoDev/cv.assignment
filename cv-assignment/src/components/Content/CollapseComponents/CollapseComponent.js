@@ -9,12 +9,7 @@ const { Panel } = Collapse;
 
 const CollapseComponent = ({ title, contentPanel, logged }) => (
   <Collapse defaultActiveKey={["1"]} ghost>
-    <Panel
-      header={
-        <Title logged={logged} title={title} />
-      }
-      key="1"
-    >
+    <Panel header={<Title logged={logged} title={title} />} key="1">
       <div className="panelContent">{contentPanel}</div>
     </Panel>
   </Collapse>
