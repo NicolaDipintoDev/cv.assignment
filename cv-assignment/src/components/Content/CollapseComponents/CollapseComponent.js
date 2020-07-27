@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Collapse, Button, Popover } from "antd";
-import { PlusCircleOutlined } from "@ant-design/icons";
+import { Collapse } from "antd";
 import "./collapseComponent.css";
 import Title from "./title/Title";
 
