@@ -12,7 +12,8 @@ const Email = () => {
 
   const openModal = () => setShowModal(true);
   const closeModal = () => setShowModal(false);
-  const onChangeValue = ({ target: { value } }) => setMessage(value);
+  const onChangeMessage = ({ target: { value } }) => setMessage(value);
+  const onChangeSubject = ({ target: { value } }) => setSubject(value);
   return (
     <>
       <HeaderIcon
@@ -42,11 +43,11 @@ const Email = () => {
           ]}
         >
           <h3>Subject</h3>
-          <Input placeholder="Subject" />
+          <Input placeholder="Subject" onChange={onChangeSubject} />
           <h3>Message</h3>
           <TextArea
             value={massege}
-            onChange={onChangeValue}
+            onChange={onChangeMessage}
             placeholder="Write a message"
             autoSize={{ minRows: 3 }}
           />
