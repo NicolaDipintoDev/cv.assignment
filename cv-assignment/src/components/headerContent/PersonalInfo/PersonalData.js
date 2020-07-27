@@ -4,12 +4,13 @@ import {
   EnvironmentOutlined,
 } from "@ant-design/icons";
 import { List } from "antd";
+import HeaderIcon from "../headerIcon/HeaderIcon";
 
 const PersonalData = () => {
   const getPersonalData = () => {
     return [
-      { label: "20/05/1993", icon: CalendarOutlined },
-      { label: "Limbiate (MB)", icon: EnvironmentOutlined }
+      { message: "20/05/1993", icon: CalendarOutlined },
+      { message: "Limbiate (MB)", icon: EnvironmentOutlined }
     ];
   };
 
@@ -17,11 +18,14 @@ const PersonalData = () => {
     <List
       size="small"
       dataSource={getPersonalData()}
+      grid={{
+        gutter: 16,
+        xs: 2
+      }}
       split={false}
       renderItem={item => (
         <List.Item>
-          <item.icon className="headerIcon" />{" "}
-          <span className="headerText">{item.label}</span>
+          <HeaderIcon Icon={item.icon} message={item.message}/>
         </List.Item>
       )}
     />
