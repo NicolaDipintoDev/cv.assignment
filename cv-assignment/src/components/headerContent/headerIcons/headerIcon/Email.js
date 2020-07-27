@@ -7,10 +7,12 @@ const { TextArea } = Input;
 
 const Email = () => {
   const [showModal, setShowModal] = useState(false);
+  const [subject, setSubject] = useState("");
   const [massege, setMessage] = useState("");
 
   const openModal = () => setShowModal(true);
   const closeModal = () => setShowModal(false);
+  const onChangeValue = ({ target: { value } }) => setMessage(value);
   return (
     <>
       <HeaderIcon
@@ -24,15 +26,31 @@ const Email = () => {
           //onOk={this.handleOk}
           onCancel={closeModal}
           footer={[
-            <Button
-              key="submit"
-              type="primary"
-              // onClick={this.handleOk}
+            <a
+              href="mailto:no-one@snai1mai1.com?subject=look at this website&body=Hi,I found this website and thought you might like it http://www.geocities.com/wowhtml/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-             Invia
-            </Button>
+              <Button
+                key="submit"
+                type="primary"
+                // onClick={this.handleOk}
+              >
+                Invia
+              </Button>
+            </a>
           ]}
-        ></Modal>
+        >
+          <h3>Subject</h3>
+          <Input placeholder="Subject" />
+          <h3>Message</h3>
+          <TextArea
+            value={massege}
+            onChange={onChangeValue}
+            placeholder="Write a message"
+            autoSize={{ minRows: 3 }}
+          />
+        </Modal>
       ) : (
         false
       )}
