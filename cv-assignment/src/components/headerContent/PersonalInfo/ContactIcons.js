@@ -5,7 +5,8 @@ import {
   MailOutlined,
   PhoneOutlined
 } from "@ant-design/icons";
-import { List, Popover } from "antd";
+import { List } from "antd";
+import HeaderIcon from "../headerIcon/HeaderIcon";
 
 const ContactIcons = () => {
   const getContactIcons = () => [
@@ -33,11 +34,7 @@ const ContactIcons = () => {
       renderItem={item => (
         <List.Item>
           <a href={item.url} target='_blank' rel="noopener noreferrer">
-            <Popover
-              content={<span className="popoverHeader">{item.message}</span>}
-            >
-              <item.icon className="headerIcon" />
-            </Popover>
+            <HeaderIcon Icon={item.icon} message={item.message} />
           </a>
         </List.Item>
       )}

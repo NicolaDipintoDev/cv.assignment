@@ -13,6 +13,6 @@ const HeaderIcon = ({ Icon, message }) => {
 export default HeaderIcon;
 
 HeaderIcon.propTypes = {
-  Icon: PropTypes.func.isRequired,
+  Icon: PropTypes.object.isRequired,
   message: PropTypes.string.isRequired,
 };
