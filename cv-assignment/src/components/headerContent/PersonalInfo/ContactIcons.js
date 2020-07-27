@@ -6,7 +6,7 @@ import {
   PhoneOutlined
 } from "@ant-design/icons";
 import { List } from "antd";
-import LinkedIcon from "../headerIcon/LinkedIcon";
+import LinkedIcon from "../headerIcons/headerIcon/LinkedIcon";
 
 const ContactIcons = () => {
   const getContactIcons = () => [
@@ -23,7 +23,7 @@ const ContactIcons = () => {
 // Icon={item.icon} message={item.message}
   return (
     <List
-      style={{ position: "absolute", bottom: "0", right: "10px" }}
+      // style={{ position: "absolute", bottom: "0", right: "10px" }}
       grid={{
         gutter: 16,
         xs: 4

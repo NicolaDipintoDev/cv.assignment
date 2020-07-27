@@ -4,7 +4,7 @@ import {
   EnvironmentOutlined,
 } from "@ant-design/icons";
 import { List } from "antd";
-import HeaderIcon from "../headerIcon/HeaderIcon";
+import HeaderIcon from "../headerIcons/headerIcon/HeaderIcon";
 
 const PersonalData = () => {
   const getPersonalData = () => {
