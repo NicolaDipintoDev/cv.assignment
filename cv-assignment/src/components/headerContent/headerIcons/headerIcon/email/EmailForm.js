@@ -18,7 +18,7 @@ const EmailForm = ({ setShowModal }) => {
       footer={[
         <a
           href={
-            "mailto:no-one@snai1mai1.com?subject=" +
+            "mailto:mailto:dipinto.nicola.dev@gmail.com?subject=" +
             subject +
             "&body=" +
             message
