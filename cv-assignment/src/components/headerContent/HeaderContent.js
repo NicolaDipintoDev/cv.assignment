@@ -1,12 +1,12 @@
 import React from "react";
-import PersonalInfo from "./PersonalInfo/PersonalInfo";
 import './header.css';
+import HeaderIcons from "./headerIcons/HeaderIcons";
 
 const HeaderContent = () => (
   <div className="headerContent">
     <h1 className="headerName">Nicola Dipinto</h1>
     <div>
-      <PersonalInfo />
+      <HeaderIcons />
     </div>
   </div>
 );
