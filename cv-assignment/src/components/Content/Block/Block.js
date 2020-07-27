@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import CollapseComponent from "../CollapseComponents/CollapseComponent";
 
-const Block = ({Component, title, items, bg = null, color=null }) => (
+const Block = ({ Component, title, items, bg = null, color = null }) => (
   <div>
     <CollapseComponent
       title={title}
@@ -18,6 +18,7 @@ Block.propTypes = {
   items: PropTypes.array.isRequired,
   bg: PropTypes.string,
   color: PropTypes.string,
+  Component: PropTypes.element.isRequired
 };
 
 Block.defaultProps = {
