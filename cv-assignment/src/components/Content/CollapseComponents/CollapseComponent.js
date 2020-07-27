@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Collapse, Button } from "antd";
+import { Collapse, Button, Popover } from "antd";
 import { PlusCircleOutlined } from "@ant-design/icons";
 import "./collapseComponent.css";
 
@@ -12,11 +12,17 @@ const CollapseComponent = ({ title, contentPanel, logged }) => (
       header={
         <h1 className="blockTitle">
           {title}{" "}
-          {logged && <Button
-            ghost
-            shape="circle"
-            icon={<PlusCircleOutlined className="collapseIcon" />}
-          />}
+          {logged && (
+            <Popover
+              content={<span className="popoverCollapse">Aggiungi</span>}
+            >
+              <Button
+                ghost
+                shape="circle"
+                icon={<PlusCircleOutlined className="collapseIcon" />}
+              />
+            </Popover>
+          )}
         </h1>
       }
       key="1"
