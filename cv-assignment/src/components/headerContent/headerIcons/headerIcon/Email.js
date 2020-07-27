@@ -1,11 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import { MailOutlined } from "@ant-design/icons";
 
 const Email = () => {
-
-  return (
-    <div> email </div>
-  );
+const [massege, setMessage] = useState('');
+  return <div> email </div>;
 };
 
 export default Email;
