@@ -15,7 +15,7 @@ const LeftSide = () => (
         <List.Item>
           <SkillsBlock
             title={item.name}
-            skills={item.data}
+            data={item.data}
             bg={item.bg}
             color={item.color}
           />

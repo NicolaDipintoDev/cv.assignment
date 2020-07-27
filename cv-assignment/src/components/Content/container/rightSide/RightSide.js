@@ -15,7 +15,7 @@ const RightSide = () => {
           <List.Item>
             <ExperiencesBlock
               title={item.title}
-              experiences={item.experiences}
+              data={item.experiences}
             />
           </List.Item>
         )}
