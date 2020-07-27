@@ -4,7 +4,13 @@ import Skills from "./Skills";
 import Block from "../../../Block/Block";
 
 const SkillsBlock = ({ title, skills, bg, color }) => (
-  <Block Component={Skills} title={title}  items={skills} bg={bg} color={color} />
+  <Block
+    Component={Skills}
+    title={title}
+    items={skills}
+    bg={bg}
+    color={color}
+  />
 );
 
 export default SkillsBlock;
