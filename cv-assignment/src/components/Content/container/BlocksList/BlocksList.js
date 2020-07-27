@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { List } from "antd";
 
-const BlocksList = ({ Component, listData }) => {
+const BlocksList = ({ Component, listData, logged }) => {
   return (
     <div>
       <List
@@ -16,6 +16,7 @@ const BlocksList = ({ Component, listData }) => {
               data={item.data}
               bg={item.bg}
               color={item.color}
+              logged={logged}
             />
           </List.Item>
         )}
@@ -27,5 +28,6 @@ export default BlocksList;
 
 BlocksList.propTypes = {
   Component: PropTypes.func.isRequired,
-  listData: PropTypes.array.isRequired
+  listData: PropTypes.array.isRequired,
+  logged: PropTypes.bool.isRequired
 };

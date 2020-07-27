@@ -9,6 +9,7 @@ const RightSide = ({ logged }) => {
     <BlocksList
       Component={ExperiencesBlock}
       listData={[education, workExperiences]}
+      logged={logged}
     />
   );
 };
