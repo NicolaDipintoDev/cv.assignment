@@ -8,7 +8,7 @@ const { TextArea } = Input;
 const Email = () => {
   const [showModal, setShowModal] = useState(false);
   const [subject, setSubject] = useState("I'm interested to your Profile");
-  const [massege, setMessage] = useState("");
+  const [message, setMessage] = useState("");
 
   const openModal = () => setShowModal(true);
   const closeModal = () => setShowModal(false);
@@ -28,7 +28,7 @@ const Email = () => {
           onCancel={closeModal}
           footer={[
             <a
-              href={"mailto:no-one@snai1mai1.com?subject="+subject+"&body=Hi,I found this website and thought you might like it http://www.geocities.com/wowhtml/"}
+              href={"mailto:no-one@snai1mai1.com?subject="+subject+"&body="+message}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -45,7 +45,7 @@ const Email = () => {
           <Input placeholder="Subject" onChange={onChangeSubject} value={subject} />
           <h3>Message</h3>
           <TextArea
-            value={massege}
+            value={message}
             onChange={onChangeMessage}
             placeholder="Write a message"
             autoSize={{ minRows: 3 }}
