@@ -8,23 +8,26 @@ const { TextArea } = Input;
 const Email = () => {
   const [showModal, setShowModal] = useState(false);
   const [massege, setMessage] = useState("");
+
+  const openModal = () => setShowModal(true);
+  const closeModal = () => setShowModal(false);
   return (
     <>
       <HeaderIcon
         Icon={MailOutlined}
         message="dipinto.nicola.dev@gmail.com"
-        onClick={() => setShowModal(!showModal)}
+        onClick={openModal}
       />
       {showModal ? (
         <Modal
           visible={true}
           //onOk={this.handleOk}
-          //onCancel={this.handleCancel}
+          onCancel={closeModal}
           footer={[
             <Button
               key="submit"
               type="primary"
-             // onClick={this.handleOk}
+              // onClick={this.handleOk}
             >
              Invia
             </Button>
