@@ -47,6 +47,6 @@ const EmailForm = ({ setShowModal }) => {
 
 export default EmailForm;
 
-Block.propTypes = {
+EmailForm.propTypes = {
   setShowModal: PropTypes.func.isRequired
 };
