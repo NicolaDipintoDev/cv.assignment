@@ -4,7 +4,7 @@ import { Timeline } from "antd";
 import TimeLineItemContent from "./TimeLineItemConten";
 import "./timeLine.css";
 
-const TimeLineComponent = ({ items }) => (
+const TimeLineComponent = ({ items, logged }) => (
   <Timeline>
     {items.map(item => (
       <Timeline.Item color='#132B45' key={item.date}>
@@ -14,6 +14,7 @@ const TimeLineComponent = ({ items }) => (
             { class: "timeLine title", text: item.title },
             { class: "timeLine description", text: item.description }
           ]}
+          logged={logged}
         />
       </Timeline.Item>
     ))}
@@ -23,5 +24,6 @@ const TimeLineComponent = ({ items }) => (
 export default TimeLineComponent;
 
 TimeLineComponent.propTypes = {
-  items: PropTypes.array.isRequired
+  items: PropTypes.array.isRequired,
+  logged: PropTypes.bool.isRequired
 };
