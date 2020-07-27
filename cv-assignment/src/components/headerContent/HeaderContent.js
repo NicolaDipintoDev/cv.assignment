@@ -6,7 +6,7 @@ import Login from './login/Login';
 
 const HeaderContent = ({logged, setLogged}) => (
   <div className="headerContent">
-    <h1 className="headerName">Nicola Dipinto <Login /></h1>
+    <h1 className="headerName">Nicola Dipinto <Login setLogged={setLogged} logged={logged}/></h1>
     <div>
       <HeaderIcons />
     </div>
