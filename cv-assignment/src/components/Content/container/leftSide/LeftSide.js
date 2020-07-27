@@ -11,6 +11,7 @@ const LeftSide = ({ logged }) => (
     <BlocksList
       Component={SkillsBlock}
       listData={[languages, frameworks, swEngineering]}
+      logged={logged}
     />
   </>
 );
