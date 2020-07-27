@@ -5,14 +5,17 @@ import { UserOutlined, UserSwitchOutlined } from "@ant-design/icons";
 
 const Login = ({ logged, setLogged }) => {
   const handleClick = () => setLogged(!logged);
-  const Icon = logged ? UserSwitchOutlined : UserOutlined;
+  const setUp = logged
+    ? { icon: UserSwitchOutlined, text: "Logout" }
+    : { icon: UserOutlined, text: "Private area" };
+
   return (
     <span>
-      <Popover content={<span className="popoverHeader">{logged ? 'Logout' : 'Private area'}</span>}>
+      <Popover content={<span className="popoverHeader">{setUp.text}</span>}>
         <Button
           ghost
           shape="circle"
-          icon={<Icon className="headerIcon" />}
+          icon={<setUp.icon className="headerIcon" />}
           onClick={handleClick}
         />
       </Popover>
