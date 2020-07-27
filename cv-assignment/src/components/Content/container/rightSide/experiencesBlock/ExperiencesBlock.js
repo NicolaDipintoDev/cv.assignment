@@ -1,15 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import CollapseComponent from "../../../CollapseComponents/CollapseComponent";
 import TimeLineComponent from "../timelinecomponent/TimeLineComponent";
+import Block from "../../../Block/Block";
 
 const ExperiencesBlock = ({ title, experiences }) => (
-  <div>
-    <CollapseComponent
-      title={title}
-      contentPanel={<TimeLineComponent items={experiences} />}
-    />
-  </div>
+  <Block Component={TimeLineComponent} title={title}  items={experiences}/>
 );
 
 export default ExperiencesBlock;
