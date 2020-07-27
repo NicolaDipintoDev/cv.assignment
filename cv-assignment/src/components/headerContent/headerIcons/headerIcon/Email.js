@@ -28,14 +28,13 @@ const Email = () => {
           onCancel={closeModal}
           footer={[
             <a
-              href="mailto:no-one@snai1mai1.com?subject=look at this website&body=Hi,I found this website and thought you might like it http://www.geocities.com/wowhtml/"
+              href={"mailto:no-one@snai1mai1.com?subject="+subject+"&body=Hi,I found this website and thought you might like it http://www.geocities.com/wowhtml/"}
               target="_blank"
               rel="noopener noreferrer"
             >
               <Button
                 key="submit"
                 type="primary"
-                // onClick={this.handleOk}
               >
                 Invia
               </Button>
